@@ -4,13 +4,27 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
       jshint: {
-        all: ['gruntfile.js', 'angular-defer-cloak.js']
+        all: ['gruntfile.js', 'angular-defer-cloak.js'],
+        options: {
+          globals: {
+            angular: true
+          }
+        }
       },
       uglify: {
         dist: {
           files: {
             'angular-defer-cloak.min.js': ['angular-defer-cloak.js']
           }
+        }
+      },
+      cssmin: {
+        target: {
+          files: [{
+            expand: true,
+            src: ['angular-defer-cloak.css'],
+            ext: '.min.css'
+          }]
         }
       },
       bump: {
@@ -33,5 +47,5 @@ module.exports = function (grunt) {
       },
     });
 
-    grunt.registerTask('default', ['jshint','uglify']);
+    grunt.registerTask('default', ['jshint','uglify','cssmin']);
 };
