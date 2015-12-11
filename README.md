@@ -1,8 +1,53 @@
 # angular-defer-cloak
 
-Angular `defer-cloak` directive  + CSS rules as an improved alternative to the native angular `ng-cloak` directive.
+Angular `defer-cloak` directive  + CSS rules as an improved alternative to the native angular [`ng-cloak` directive](https://docs.angularjs.org/api/ng/directive/ngCloak).
 
-## LICENSE
+## Installation
+
+    bower install angular-defer-cloak
+
+## Initialisation of your application
+
+```js
+angular.module('app',['deferCloak'])
+```
+
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="bower_components/angular-defer-cloak/angular-defer-cloak.min.css">
+    <script src="bower_components/angular-defer-cloak/angular-defer-cloak.min.js"></script>
+  </head>
+  <body data-ng-app="app">
+    <!-- ... -->
+  </body>
+</html>
+```
+
+## Usage example
+
+
+```html
+
+  <div data-defer-cloak data-ng-show="isLoading">
+      Loading ...
+  </div>
+  <div data-defer-cloak class="error-content" data-ng-show="items && items.length === 0 && !isLoading">
+      <p class="error-text">No item available</p>
+  </div>
+  <div data-defer-cloak class="error-content" data-ng-show="errorRetrievingItems">
+      <p class="error-text">Can't fetch items</p>
+  </div>
+
+  <ul>
+      <li data-ng-repeat="item in items">
+        {{item.label}}
+      </li>
+  </ul>
+</body>
+```
+
+## LICENSE
 
 The MIT License (MIT)
 
