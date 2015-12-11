@@ -1,0 +1,32 @@
+{
+  "name": "angular-defer-cloak",
+  "version": "0.1.0",
+  "description": "Angular `defer-cloak` directive  + CSS rules as an improved alternative to the native angular `ng-cloak` directive.",
+  "main": "angular-defer-cloak.js",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bump": "^0.6.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.10.0",
+    "load-grunt-tasks": "^3.3.0"
+  },
+  "scripts": {
+    "build": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:rbecheras/angular-defer-cloak.git"
+  },
+  "keywords": [
+    "bower",
+    "component",
+    "angular","directive"
+  ],
+  "author": "Rémi Becheras <rbecheras@sirap.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbecheras/angular-defer-cloak/issues"
+  },
+  "homepage": "https://github.com/rbecheras/angular-defer-cloak#readme"
+}
