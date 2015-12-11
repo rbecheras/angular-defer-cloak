@@ -6,9 +6,8 @@
  *
  */
 
-'use strict';
-
 (function(){
+'use strict';
 
   angular.module('deferCloak').directive("deferCloak", function () {
       return {
