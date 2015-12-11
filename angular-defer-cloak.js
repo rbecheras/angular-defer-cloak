@@ -10,9 +10,14 @@
 
 (function(){
 
-  /**
-   * @TODO
-   * Write your bower component code here
-   */
+  angular.module('deferCloak').directive("deferCloak", function () {
+      return {
+          restrict: 'A',
+          link: function (scope, element, attrs) {
+              attrs.$set("deferCloak", undefined);
+              element.removeClass("defer-cloak");
+          }
+      };
+  });
 
 })();
