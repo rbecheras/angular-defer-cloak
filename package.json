@@ -1,6 +1,6 @@
 {
   "name": "angular-defer-cloak",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular `defer-cloak` directive  + CSS rules as an improved alternative to the native angular `ng-cloak` directive.",
   "main": "angular-defer-cloak.js",
   "devDependencies": {
