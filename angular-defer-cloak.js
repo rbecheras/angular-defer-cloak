@@ -9,7 +9,7 @@
 (function(){
 'use strict';
 
-  angular.module('deferCloak').directive("deferCloak", function () {
+  angular.module('deferCloak',[]).directive("deferCloak", function () {
       return {
           restrict: 'A',
           link: function (scope, element, attrs) {
